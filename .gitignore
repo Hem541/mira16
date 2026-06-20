@@ -1,0 +1,48 @@
+# build artifacts / binaries
+cpuemu
+pipeemu
+cacheemu
+minicc
+run_tests
+run_pipe_tests
+run_cache_tests
+run_cache_pipe_tests
+run_comp_tests
+run_bench
+*.o
+*.out
+*.exe
+build/
+
+# traces / generated data
+trace.csv
+trace_plot.png
+*.log
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# secrets / local config
+.env
+*.local
+secrets.*
+config.local.*
+
+# large media / datasets (demos hold their own; see demos/README.txt)
+*.mp4
+*.mov
+*.zip
+*.tar.gz
+datasets/
+*.parquet
+
+# os / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
