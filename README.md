@@ -22,7 +22,7 @@
 
 ## What it is
 
-MIRA-16 is a complete computer implemented in software: a custom 16-bit instruction set, a 5-stage pipelined processor with hazard handling, a direct-mapped L1 cache, and a compiler for a small C-like language. Every layer feeds the one below it — high-level code is compiled to assembly, assembled to machine code, and executed cycle-by-cycle by the CPU. Nothing between layers is faked.
+MIRA-16 is a complete computer implemented in software: a custom 16-bit instruction set, a 5-stage pipelined processor with hazard handling, a direct-mapped L1 cache, and a compiler for a small C-like language. Every layer feeds the one below it — high-level code is compiled to assembly, assembled to machine code, and executed cycle-by-cycle by the CPU.
 
 > The pipeline is verified against a simple scalar model by **differential testing** — the two must produce identical state on every test program. Compiled code runs on that scalar model (the authoritative functional core); the pipeline is a timing model demonstrated on hand-written benchmark programs.
 
